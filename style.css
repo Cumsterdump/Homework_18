@@ -23,7 +23,7 @@
 /* Tag selectors */
 body {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 header {
@@ -107,6 +107,11 @@ a:visited {
   font-size: 21px;
 }
 
+.product-name:hover,
+.product-name:visited {
+  color: #515151;
+}
+
 .product-prices {
   display: flex !important; /* Thank you Bootstrap devs very much again!!!!! */
   justify-content: space-between;
@@ -185,10 +190,16 @@ a:visited {
 
 /* Footer selectors */
 .contacts {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
   background-color: #f4f4f4;
 }
 
 .contacts-row {
+  width: 1200px;
+  margin: 0 auto;
   justify-content: center;
   padding: 36px 128px;
 }
@@ -215,12 +226,11 @@ a:visited {
 }
 
 .copyright-row {
-  margin: 0 30px;
   justify-content: center;
 }
 
 .copyright {
-  margin: 15px 130px 21px 125px;
+  margin: 15px 0 21px;
   text-align: center;
   color: #c3c3c3;
   font-family: Formular, sans-serif;
